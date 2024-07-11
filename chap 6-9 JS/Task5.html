@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="Task1.html">Go to page 1</a>
+    <script>
+    // Ask the user to input a number or use the default number 5
+var number = prompt("Enter a number to display its multiplication table:");
+var num = (number !== null && number !== "") ? parseInt(number) : 5;
+
+// Generate the multiplication table
+var table = "<h2>Multiplication Table of " + num + "</h2>";
+table += "<table border='1'>";
+
+for (var i = 1; i <= 10; i++) {
+    table += "<tr>";
+    table += "<td>" + num + " x " + i + "</td>";
+    table += "<td>" + (num * i) + "</td>";
+    table += "</tr>";
+}
+
+table += "</table>";
+
+// Display the table in the browser
+document.write(table);
+</script>
+</body>
+</html>

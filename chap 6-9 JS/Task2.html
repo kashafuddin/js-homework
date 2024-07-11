@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="Task1.html">Go to page 1</a>
+    <script>
+        var a = 2, b = 1;
+        var result = --a - --b + ++b + b--;
+    
+        document.write("a: " + a + "<br>");
+        document.write("b: " + b + "<br>");
+        document.write("result: " + result + "<br>");
+    
+        // Explanation at each stage
+        --a; // Decrement a before using its value
+        document.write("--a: " + a + "<br>");
+    
+        --a - --b; // Decrement a and b before using their values
+        document.write("--a - --b: " + a + " - " + b + "<br>");
+    
+        --a - --b + ++b; // Decrement a and b, then increment b before using their values
+        document.write("--a - --b + ++b: " + a + " - " + b + " + " + b + "<br>");
+    
+        --a - --b + ++b + b--; // Decrement a and b, then increment b and use its value before decrementing
+        document.write("--a - --b + ++b + b--: " + a + " - " + b + " + " + b + " + " + (b-1) + "<br>");
+    </script>
+    
+    
+</body>
+</html>
